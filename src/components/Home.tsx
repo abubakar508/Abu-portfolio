@@ -62,7 +62,7 @@ const Home = () => {
         </div>
         {/* image  */}
         <div className=' bg-transparent hidden lg:block w-[800px] h-[800px] rounded-full overflow-hidden absolute right-[8%]'>
-          <Image src={logo} width={10000} height={100} alt='hero-image' className=' w-full h-full object-cover  invert-0 grayscale' />
+          <Image src={logo} width={10000} height={100} alt='hero-image' className=' w-full h-full object-cover  invert-0 grayscale' priority quality={100} />
         </div>
     </motion.div>
   )
