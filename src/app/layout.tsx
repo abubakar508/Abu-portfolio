@@ -8,6 +8,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'ABISMA - Portfolio',
   description: 'My skills and expertise',
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({
