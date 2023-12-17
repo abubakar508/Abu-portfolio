@@ -29,7 +29,11 @@ import IsmailCodes from '../../public/assets/IsmailCodes.png'
 
 const Home = () => {
   return (
-    <div
+    <motion.div
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
     className=' flex items-center justify-center lg:justify-start' id='home'>
       {/* home wrapper */}
         <div className=' h-screen lg:w-[80%] z-20 flex lg:items-start items-center justify-center flex-col lg:ml-20'>
@@ -57,10 +61,10 @@ const Home = () => {
              </a>
         </div>
         {/* image  */}
-        <div className=' bg-transparent hidden lg:block lg:w-[800px] lg:h-[800px] rounded-full overflow-hidden absolute right-[8%]'>
+        <div className=' bg-transparent hidden lg:block w-[800px] h-[800px] rounded-full overflow-hidden absolute right-[8%]'>
           <Image src={logo} width={10000} height={100} alt='hero-image' className=' w-full h-full object-cover  invert-0 grayscale' />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

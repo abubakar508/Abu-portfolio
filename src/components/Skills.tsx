@@ -7,11 +7,19 @@ import SectionHeader from "./SectionHeader";
 //import Skills data constant
 import { skillData } from "@/constants";
 
+//framer
+import { motion }from 'framer-motion'
+import { fadeIn } from "./Variants";
 const Skills = () => {
 
   const [index, setIndex] = useState(0)
   return (
-    <div className=" h-screen lg:h-max md:h-max pt-20 lg:pt-5" id="skills">
+    <motion.div
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
+    className=" h-screen lg:h-max md:h-max pt-20 lg:pt-5" id="skills">
       {/* section Header */}
       <SectionHeader title="skills" subTitle="skills is excellence" />
       <section
@@ -46,7 +54,7 @@ const Skills = () => {
           ))}
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

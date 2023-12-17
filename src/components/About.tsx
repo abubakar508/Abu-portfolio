@@ -18,11 +18,16 @@ import { motion } from 'framer-motion'
 
 // assets
 import about from '../../public/assets/about.png'
+import { fadeIn } from './Variants'
 
 
 const About = () => {
   return (
-    <div
+    <motion.div
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
     className=' sm:h-max pt-24 lg:pt-20' id='about'>
       {/* section header */}
       <SectionHeader title='About' subTitle='About abisma' />
@@ -119,7 +124,7 @@ const About = () => {
         <Image src={about} alt='About image' className=' w-full h-full' />
       </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

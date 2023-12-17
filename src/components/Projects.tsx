@@ -18,12 +18,17 @@ import { motion } from "framer-motion";
 
 //import icons
 import { AiFillCheckCircle, AiOutlineCheckCircle } from 'react-icons/ai'
+import { fadeIn } from "./Variants";
 
 const Projects = () => {
 
   const [click, setClick] = useState(false)
   return (
-    <div
+    <motion.div
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
       className=" lg:h-max h-screen md:h-max Pt-20 mt-20 lg:Pt-5 relative"
       id="projects"
     >
@@ -77,7 +82,7 @@ const Projects = () => {
         </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

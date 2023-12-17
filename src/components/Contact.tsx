@@ -11,10 +11,15 @@ import { SiCheckmk } from 'react-icons/si'
 
 //import framer
 import { motion } from "framer-motion";
+import { fadeIn } from './Variants';
 
 const Contact = () => {
   return (
-    <div
+    <motion.div
+    variants={fadeIn('up', 0.2)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once: false, amount: 0.2}}
     className=' mb-10 pt-20 lg:pt-5 h-screen' id='contact'>
       <SectionHeader title='Contact' subTitle='Reach me' />
       <div className=' flex flex-col justify-between'>
@@ -49,7 +54,7 @@ const Contact = () => {
         </div>
       </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
