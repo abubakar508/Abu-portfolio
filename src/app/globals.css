@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: Comforta;
+  src: url("../../public/Comfortaa-VariableFont_wght.ttf");
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: Dancing;
+  src: url("../../public/DancingScript-VariableFont_wght.ttf");
 }
-
+@font-face {
+  font-family: Montserrat;
+  src: url('../../public/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: Lovers;
+  src: url('../../public/LoversQuarrel-Regular.ttf');
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-primary text-white
+}
+
+.active {
+  @apply border-b-2 border-accent text-accent
+}
+.btnActive {
+  @apply bg-accent rounded-full
+}
+
+.bg-accent {
+  @apply bg-[#7f1cfc]
+}
+.text-accent {
+  @apply text-[#7f1cfc]
+}
+.bg-hover {
+  @apply bg-[#6519c6]
+}
+.bg-primary {
+  @apply bg-[#06062a]
+}
+.text-primary {
+  @apply text-[#06062a]
+}
+.bg-secondary {
+  @apply bg-[#151538]
+}
+.text-secondary {
+  @apply text-[#151538]
+}
+.bg-tertiary{
+  @apply bg-[#242445]
+}
+.text-tertiary{
+  @apply text-[#242445]
+}
+
+.flexBetween {
+  @apply flex items-center justify-between
+}
+.flexEvenly {
+  @apply flex items-center justify-evenly
+}
+.flexCenter {
+  @apply flex items-center justify-center
 }
