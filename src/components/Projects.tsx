@@ -25,7 +25,7 @@ const Projects = () => {
   const [click, setClick] = useState(false)
   return (
     <motion.div
-    variants={fadeIn('up', 0.2)}
+    variants={fadeIn('down', 0.2)}
     initial='hidden'
     whileInView={'show'}
     viewport={{once: false, amount: 0.2}}
