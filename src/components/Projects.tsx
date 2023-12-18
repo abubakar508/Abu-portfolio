@@ -33,7 +33,12 @@ const Projects = () => {
       id="projects"
     >
       <SectionHeader title="Projects" subTitle="Projects prove skils" />
-      <section className=" items-center justify-between lg:justify-evenly space-y-20 lg:gap-0 lg:h-[450px] flex flex-col lg:flex-row">
+      <motion.section
+      variants={fadeIn('right', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.2}}
+      className=" items-center justify-between lg:justify-evenly space-y-20 lg:gap-0 lg:h-[450px] flex flex-col lg:flex-row">
         <div className=" lg:w-[500px] md:w-[400px] lg:h-full p-2 flex flex-col text-center items-center md:text-center md:items-center lg:items-start justify-center space-y-3">
           <h1 className=" text-3xl font-bold ">
             {" "}
@@ -81,7 +86,7 @@ const Projects = () => {
           <CustomButton title="Hire Me" icon={<AiFillCheckCircle/>} containerStyles=" flex items-center justify-center w-full items-center gap-3 py-3 hover:bg-accent-hover"  />
         </div>
         </div>
-      </section>
+      </motion.section>
     </motion.div>
   );
 };

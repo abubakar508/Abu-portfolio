@@ -19,7 +19,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 //import assets
-import logo from '../../public/assets/logo.png'
+import logo from '../../public/assets/LogoExalt.png'
 
 const NavBar = () => {
 
@@ -61,7 +61,7 @@ const NavBar = () => {
           quality={100}
           priority
           alt="Navigation logo"
-          className=" w-[140px] h-[50px]"
+          className=" w-[200px] h-[60px]"
         />
       </div>
       {/* navigation links */}

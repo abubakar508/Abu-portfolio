@@ -25,22 +25,28 @@ import { motion } from 'framer-motion'
 //import assets
 import logo from '../../public/assets/Abisma.png'
 import IsmailCodes from '../../public/assets/IsmailCodes.png'
+import ParticlesContainer from './ParticlesContainer';
 
 
 const Home = () => {
   return (
     <motion.div
-    variants={fadeIn('down', 0.2)}
+    variants={fadeIn('up', 0.4)}
     initial='hidden'
     whileInView={'show'}
-    viewport={{once: false, amount: 0.2}}
     className=' flex items-center justify-center lg:justify-start' id='home'>
+      <ParticlesContainer />
       {/* home wrapper */}
-        <div className=' h-screen lg:w-[80%] z-20 flex lg:items-start items-center justify-center flex-col lg:ml-20'>
+        <motion.div 
+        variants={fadeIn('right', 0.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: false, amount: 0.2}}
+        className=' h-screen lg:w-[80%] z-20 flex lg:items-start items-center justify-center flex-col lg:ml-20'>
           {/* name */}
             <h1 className=' text-tertiary uppercase font-extrabold text-[150px] lg:text-[250px] xl:text-[350px] tracking-wider relative flex items-center'>
                 Abu
-                <Image src={IsmailCodes} width={500} height={50} alt='' className=' absolute bottom-0 lg:bottom-10 lg:w-[800px]' />
+                <Image src={IsmailCodes} width={500} height={50} quality={100} alt='' className=' absolute bottom-0 lg:bottom-10 lg:w-[800px]' />
             </h1>
             <div className=' flex items-center gap-2 justify-start'>
                 <AiOutlineDesktop className=' hidden lg:block text-3xl text-accent' />
@@ -59,7 +65,7 @@ const Home = () => {
             rel="noopener noreferrer">
              <CustomButton title='Explore More' containerStyles=' mt-4 py-3 font-comforta font-bold xl:py-4 xl:px-8' />
              </a>
-        </div>
+        </motion.div>
         {/* image  */}
         <div className=' bg-transparent hidden lg:block w-[800px] h-[800px] rounded-full overflow-hidden absolute right-[8%]'>
           <Image src={logo} width={10000} height={100} alt='hero-image' className=' w-full h-full object-cover  invert-0 grayscale' priority quality={100} />

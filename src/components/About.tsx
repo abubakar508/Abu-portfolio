@@ -24,23 +24,26 @@ import { fadeIn } from './Variants'
 const About = () => {
   return (
     <motion.div
-    variants={fadeIn('down', 0.2)}
+    variants={fadeIn('up', 0.2)}
     initial='hidden'
     whileInView={'show'}
-    viewport={{once: false, amount: 0.2}}
     className=' sm:h-max pt-24 lg:pt-20' id='about'>
       {/* section header */}
       <SectionHeader title='About' subTitle='About abisma' />
       {/* about wrapper */}
       <div className=' flex flex-col lg:flex-row items-center lg:justify-center lg:gap-6'>
-      <div
+      <motion.div
+      variants={fadeIn('right', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.2}}
       className=''>
         <section className='  w-full md:w-[500px] p-2 text-center lg:text-start'>
           <h1 className=' text-slate-200 text-3xl font-black tracking-wide font-comforta'>
             <span className=' text-accent'>Captivating </span> magnificience is a progenic talent. Birthing real digital ideas.
           </h1>
           <small className=' text-sm font-bold font-comforta'>
-            I am a software enginner based in Nairobi, Kenya. My focus is on mobile development, web development & blockchain development where i have dived into smart contract development. Achieveing greater heights in the tech space is an all time urge.
+            I am a software developer based in Nairobi, Kenya. My focus is on mobile development, web development & blockchain development where i have dived into smart contract development. Achieveing greater heights in the tech space is an all time urge.
           </small>
         </section>
         <section className=' grid grid-cols-4 gap-1 w-full md:w-[500px] items-center justify-center'>
@@ -49,7 +52,7 @@ const About = () => {
           <CountUp start={2} end={4} />+
          
           </div>
-          <span className=' text-slate-200 text-[12px] font-medium uppercase'>
+          <span className=' text-slate-200 text-[12px] font-bold uppercase'>
             Years of <br /> experience
           </span>
 
@@ -59,7 +62,7 @@ const About = () => {
           <CountUp start={2} end={20} />+
          
           </div>
-          <span className=' text-slate-200 text-[12px] font-medium uppercase'>
+          <span className=' text-slate-200 text-[12px] font-bold uppercase'>
             satisfied <br /> clients
           </span>
 
@@ -69,17 +72,17 @@ const About = () => {
           <CountUp start={2} end={30} />+
          
           </div>
-          <span className=' text-slate-200 text-[12px] font-medium uppercase'>
+          <span className=' text-slate-200 text-[12px] font-bold uppercase'>
             finished <br /> projects
           </span>
 
         </div>
-        <div className=' p-2 w-fit border-r border-accent flex flex-col space-y-2 text-center'>
+        <div className=' p-2 w-fit flex flex-col space-y-2 text-center'>
           <div className=' text-3xl font-black uppercase flex text-accent text-center items-center justify-center'>
           0<CountUp start={20} end={3} />
          
           </div>
-          <span className=' text-slate-200 text-[10px] font-medium uppercase'>
+          <span className=' text-slate-200 text-[10px] font-bold uppercase'>
             programming <br /> languages
           </span>
 
@@ -119,10 +122,15 @@ const About = () => {
             </span>
           </div>
         </div>
-      </div>
-      <div className=' xl:w-[1000px] xl:h-full'>
+      </motion.div>
+      <motion.div
+      variants={fadeIn('left', 0.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.2}}
+      className=' xl:w-[1000px] xl:h-full'>
         <Image src={about} alt='About image' className=' w-full h-full' />
-      </div>
+      </motion.div>
       </div>
     </motion.div>
   )

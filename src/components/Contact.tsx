@@ -16,7 +16,7 @@ import { fadeIn } from './Variants';
 const Contact = () => {
   return (
     <motion.div
-    variants={fadeIn('down', 0.2)}
+    variants={fadeIn('right', 0.2)}
     initial='hidden'
     whileInView={'show'}
     viewport={{once: false, amount: 0.2}}
