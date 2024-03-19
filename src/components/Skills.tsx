@@ -46,7 +46,7 @@ const Skills = () => {
               {item.title}:
               </span>
               {/* content desc */}
-              <span className=" text-xl  lg:text-2g flex items-center gap-3">
+              <span className=" text-xl  lg:text-2g flex flex-wrap items-center gap-3">
                 {item.icons}
               </span>
               </div>
