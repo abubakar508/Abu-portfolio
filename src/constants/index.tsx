@@ -80,21 +80,17 @@ export const NavData = [
   },
 ];
 export const typeSequence = [
-  "Frontend Developer",
+  "Fullstack Developer",
   2000,
-  "Backend Developer",
-  2000,
-  "UI/UX Designer",
+  "Quant Enthusiast",
   2000,
   "Mobile app developer",
   2000,
-  "Blockend Developer",
+  "Blockchain Developer",
   2000,
   "Data analyst",
   2000,
   "Creative Writer",
-  2000,
-  "Smart Contract Developer",
   2000,
 ];
 
@@ -122,7 +118,7 @@ export const skillData = [
         ]
       },
       {
-        title: 'Blockend Development',
+        title: 'Blockchain Development',
         icons: [
           <SiSolidity />,
           <SiEthereum />,
@@ -147,7 +143,7 @@ export const skillData = [
         ]
       },
       {
-        title: 'Data Analysis & Logic',
+        title: 'Data Analysis & Quant',
         icons: [
           <SiPython />,
           <SiJupyter />
@@ -159,29 +155,17 @@ export const skillData = [
     title: 'Experience',
     info: [
       {
-        title: 'Lead Frontend Developer',
-        icons: 'Project Crafted Sole'
-      },
-      {
         title: 'Intern Web3 & Blockchain developer',
         icons: 'StackUp Organisation'
-      },
-      {
-        title: 'Intern Python Developer',
-        icons: 'Tek System Company'
       },
       {
         title: 'Junior (SE): Mobile app developer',
         icons: 'Project Crafted Sole'
       },
       {
-        title: 'UI/UX Designer',
-        icons: 'Project Shibe: Umma university'
-      },
-      {
-        title: 'Frontend Developer',
-        icons: 'Project Shibe: Umma University'
-      },
+        title: 'Building on ICP Blockchain',
+        icons: 'ICP Hub Kenya'
+},
     ]
   },
   {
@@ -199,10 +183,6 @@ export const skillData = [
         title: 'President Award Kenya',
         icons: 'Bronze, Silver & Gold Awardee'
       },
-      {
-        title: 'Fullstack Javascript Developer',
-        icons: 'Ubunifu College, nairobi'
-      },
     ]
   },
   {
@@ -217,7 +197,7 @@ export const skillData = [
         icons: 'Hackathoner'
       },
       {
-        title: 'Umma Tech Hackathons',
+        title: 'Spillover Hackathon (ICP hub Kenya)',
         icons: 'Hackathoner'
       },
 
