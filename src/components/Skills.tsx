@@ -40,7 +40,7 @@ const Skills = () => {
           {/* content */}
           {skillData[index].info.map((item :any, itemIndex : number) => (
             <div className=" bg-tertiary rounded-md py-2" key={itemIndex}>
-              <div className=" w-full flex flex-col items-center justify-between gap-2">
+              <div className=" w-full flex flex-col items-center justify-between gap-2 text-center">
                 {/* content title */}
                 <span className=" text-sm text-accent lg:text-lg">
               {item.title}:
